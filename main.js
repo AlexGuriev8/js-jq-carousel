@@ -5,6 +5,22 @@ $(document).ready(
         $('.prev').click(prevImage);
         $('.next').click(nextImage);
 
+
+        $('.nav .fa-circle').click(function () {
+
+        $('.nav .fa-circle.active').removeClass('active'); 
+        $(this).addClass('active');
+        var indexClick = $(this).index();
+        var imgActive = $('.images img').eq(indexClick);
+        $('.images img.active').removeClass('active');
+        imgActive.addClass('active');
+        
+        });
+
+
+
+
+
         //function previmage
         function prevImage() {
 
