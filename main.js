@@ -6,20 +6,16 @@ $(document).ready(
         $('.next').click(nextImage);
 
 
-        $('.nav .fa-circle').click(function () {
+        $('.nav i').click(function () {
 
-        $('.nav .fa-circle.active').removeClass('active'); 
+        $('.nav i.active').removeClass('active'); 
         $(this).addClass('active');
         var indexClick = $(this).index();
         var imgActive = $('.images img').eq(indexClick);
-        $('.images img.active').removeClass('active');
+        $('.images img').removeClass('active');
         imgActive.addClass('active');
         
         });
-
-
-
-
 
         //function previmage
         function prevImage() {
@@ -56,8 +52,6 @@ $(document).ready(
                 cercAttivo.next().addClass('active');
             }
         }
-
-
 
     });
 
